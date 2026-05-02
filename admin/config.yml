@@ -12,5 +12,6 @@ collections:
       - file: "index.html"
         label: "Main Website Content"
         name: "home"
+        format: "raw" 
         fields:
-          - {label: "Website Code", name: "body", widget: "code", defaultLanguage: "html"}
+          - {label: "Website Code", name: "body", widget: "text"}
