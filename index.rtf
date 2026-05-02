@@ -1,0 +1,697 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en" class="scroll-smooth">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Cali Dani Designs | Shaneille Bramwell</title>\
+    \
+    <!-- Google Fonts -->\
+    <link rel="preconnect" href="https://fonts.googleapis.com">\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\
+    \
+    <!-- Tailwind CSS -->\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <script>\
+        tailwind.config = \{\
+            theme: \{\
+                extend: \{\
+                    colors: \{\
+                        'brand-pink': '#E0938E',\
+                        'brand-pink-dark': '#C87B76',\
+                        'brand-dark': '#1a1a1a',\
+                        'brand-light': '#fafafa'\
+                    \},\
+                    fontFamily: \{\
+                        'serif': ['"Playfair Display"', 'serif'],\
+                        'sans': ['"Inter"', 'sans-serif']\
+                    \}\
+                \}\
+            \}\
+        \}\
+    </script>\
+\
+    <!-- Font Awesome for Icons -->\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
+\
+    <style>\
+        /* Custom Styles & Animations */\
+        body \{\
+            background-color: #ffffff;\
+            color: #1a1a1a;\
+            overflow-x: hidden;\
+        \}\
+\
+        /* Parallax Backgrounds */\
+        .parallax-hero \{\
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop');\
+            background-attachment: fixed;\
+            background-position: center;\
+            background-repeat: no-repeat;\
+            background-size: cover;\
+        \}\
+\
+        .parallax-section \{\
+            background-image: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2000&auto=format&fit=crop');\
+            background-attachment: fixed;\
+            background-position: center;\
+            background-repeat: no-repeat;\
+            background-size: cover;\
+        \}\
+\
+        /* Scroll Reveal Animations */\
+        .reveal \{\
+            opacity: 0;\
+            transform: translateY(40px);\
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);\
+        \}\
+\
+        .reveal.active \{\
+            opacity: 1;\
+            transform: translateY(0);\
+        \}\
+\
+        .delay-100 \{ transition-delay: 100ms; \}\
+        .delay-200 \{ transition-delay: 200ms; \}\
+        .delay-300 \{ transition-delay: 300ms; \}\
+\
+        /* Custom Form Input Styling */\
+        .form-input \{\
+            border: none;\
+            border-bottom: 1px solid #e5e7eb;\
+            border-radius: 0;\
+            padding: 0.75rem 0;\
+            background: transparent;\
+            transition: border-color 0.3s ease;\
+        \}\
+        .form-input:focus \{\
+            outline: none;\
+            border-color: #E0938E;\
+            box-shadow: none;\
+        \}\
+\
+        /* Portfolio Image Hover */\
+        .portfolio-item \{ overflow: hidden; \}\
+        .portfolio-img \{\
+            transition: transform 0.7s ease;\
+        \}\
+        .portfolio-item:hover .portfolio-img \{\
+            transform: scale(1.05);\
+        \}\
+        \
+        /* AI Output Styling */\
+        .ai-formatted strong \{\
+            color: #1a1a1a;\
+            font-weight: 500;\
+        \}\
+    </style>\
+</head>\
+<body class="font-sans antialiased text-brand-dark">\
+\
+    <!-- Navigation -->\
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 px-8 lg:px-16 flex justify-between items-center bg-transparent">\
+        <a href="#home" class="font-serif text-2xl tracking-widest font-semibold z-50">\
+            CALI DANI<span class="text-brand-pink">.</span>\
+        </a>\
+        \
+        <!-- Desktop Menu -->\
+        <ul class="hidden md:flex space-x-10 text-sm tracking-widest uppercase font-medium">\
+            <li><a href="#about" class="hover:text-brand-pink transition-colors">About</a></li>\
+            <li><a href="#work" class="hover:text-brand-pink transition-colors">Work</a></li>\
+            <li><a href="#services" class="hover:text-brand-pink transition-colors">Services</a></li>\
+            <li><a href="#ai-studio" class="hover:text-brand-pink transition-colors text-brand-pink"><i class="fas fa-wand-magic-sparkles mr-1"></i> AI Studio</a></li>\
+            <li><a href="#contact" class="hover:text-brand-pink transition-colors">Contact</a></li>\
+        </ul>\
+\
+        <!-- Mobile Menu Button -->\
+        <button id="mobile-menu-btn" class="md:hidden text-brand-dark z-50 focus:outline-none">\
+            <i class="fas fa-bars text-2xl"></i>\
+        </button>\
+\
+        <!-- Mobile Menu Overlay -->\
+        <div id="mobile-menu" class="fixed inset-0 bg-white flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-40">\
+            <ul class="flex flex-col space-y-8 text-center text-xl tracking-widest uppercase font-serif">\
+                <li><a href="#about" class="mobile-link hover:text-brand-pink transition-colors">About</a></li>\
+                <li><a href="#work" class="mobile-link hover:text-brand-pink transition-colors">Work</a></li>\
+                <li><a href="#services" class="mobile-link hover:text-brand-pink transition-colors">Services</a></li>\
+                <li><a href="#ai-studio" class="mobile-link text-brand-pink hover:text-brand-dark transition-colors">\uc0\u10024  AI Studio</a></li>\
+                <li><a href="#contact" class="mobile-link hover:text-brand-pink transition-colors">Contact</a></li>\
+            </ul>\
+        </div>\
+    </nav>\
+\
+    <!-- Hero Section -->\
+    <header id="home" class="parallax-hero min-h-screen flex items-center justify-center relative px-6">\
+        <div class="text-center max-w-4xl mx-auto z-10 mt-16">\
+            <p class="reveal text-brand-pink uppercase tracking-[0.3em] text-sm md:text-base mb-6 font-medium">Cali Dani Designs</p>\
+            <h1 class="reveal delay-100 font-serif text-5xl md:text-7xl lg:text-8xl text-brand-dark leading-tight mb-8">\
+                Welcome to My World <br>of <span class="italic text-brand-pink">Creativity.</span>\
+            </h1>\
+            <div class="reveal delay-200">\
+                <a href="#work" class="inline-block border border-brand-dark px-10 py-4 text-sm uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-all duration-300">\
+                    Explore My Portfolio\
+                </a>\
+            </div>\
+        </div>\
+        <!-- Scroll indicator -->\
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-50">\
+            <i class="fas fa-chevron-down font-light"></i>\
+        </div>\
+    </header>\
+\
+    <!-- About Section -->\
+    <section id="about" class="py-24 md:py-32 px-6 lg:px-16 max-w-7xl mx-auto">\
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">\
+            <div class="reveal relative">\
+                <!-- Decorative pink box behind image -->\
+                <div class="absolute inset-0 bg-brand-pink/20 translate-x-4 translate-y-4 -z-10 hidden md:block"></div>\
+                <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=1200&auto=format&fit=crop" alt="Shaneille Bramwell Designing" class="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-lg">\
+            </div>\
+            \
+            <div class="reveal delay-100">\
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">So, <span class="italic text-brand-pink">who am I?</span></h2>\
+                <div class="w-16 h-[1px] bg-brand-pink mb-8"></div>\
+                \
+                <div class="space-y-6 text-gray-600 leading-relaxed font-light">\
+                    <p>\
+                        Hey there! <span class="inline-block animate-wave text-xl">\uc0\u55357 \u56395 \u55356 \u57341 </span> I'm Shaneille! How will I fit into this little passage all the amazing things about me that you deserve to know? Either way...I'll give it a shot.\
+                    </p>\
+                    <p>\
+                        I have always been passionate about creativity and adding my own little spice to everything I do to make it beautiful. It's easy to pour love into my art because I love designing and producing appealing designs.\
+                    </p>\
+                    <p>\
+                        My goal as an artist is to solve as many design problems as possible with <strong class="font-medium text-brand-dark">minimalistic and clean artwork</strong>.\
+                    </p>\
+                    <p>\
+                        I am great at what I do, owing to my years of experience and my commitment to every project I take on. This ensures that my clients are happy and excited with every design they receive. I also believe in personal and professional development and staying relevant, so I'm always learning more efficient ways to improve each design as I progress on my creative journey.\
+                    </p>\
+                    <p class="font-serif text-xl text-brand-dark italic pt-4">\
+                        "Most of all, whatever I do, I try to have fun with it."\
+                    </p>\
+                </div>\
+                \
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Signature_of_John_Hancock.svg/1200px-Signature_of_John_Hancock.svg.png" alt="Signature Placeholder" class="h-12 mt-10 opacity-60 mix-blend-multiply" style="filter: sepia(100%) hue-rotate(310deg) saturate(150%);">\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Work Categories Grid -->\
+    <section id="work" class="py-24 bg-brand-light">\
+        <div class="px-6 lg:px-16 max-w-[1400px] mx-auto">\
+            <div class="text-center mb-16 reveal">\
+                <p class="text-brand-pink uppercase tracking-[0.2em] text-sm mb-4">Portfolio</p>\
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">My Creative <span class="italic">World</span></h2>\
+                <div class="w-16 h-[1px] bg-brand-pink mx-auto"></div>\
+            </div>\
+\
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">\
+                \
+                <!-- PDF Extracted Image 1 -->\
+                <div class="portfolio-item relative group h-[400px] reveal overflow-hidden cursor-pointer">\
+                    <img src="https://images.unsplash.com/photo-1505909182942-e2f09aee3e89?q=80&w=1000&auto=format&fit=crop" alt="Kerry Ann & Wycliffe Save the Date" class="portfolio-img w-full h-full object-cover">\
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white">\
+                        <p class="font-serif text-2xl italic mb-2 text-center px-4">Kerry Ann & Wycliffe</p>\
+                        <span class="text-xs uppercase tracking-widest border-b border-brand-pink pb-1">Save The Date</span>\
+                    </div>\
+                </div>\
+\
+                <!-- PDF Extracted Image 2 -->\
+                <div class="portfolio-item relative group h-[400px] reveal delay-100 overflow-hidden cursor-pointer">\
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1000&auto=format&fit=crop" alt="Sagicor President & CEO" class="portfolio-img w-full h-full object-cover">\
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white">\
+                        <p class="font-serif text-2xl italic mb-2 text-center px-4">Sagicor</p>\
+                        <span class="text-xs uppercase tracking-widest border-b border-brand-pink pb-1">President & CEO</span>\
+                    </div>\
+                </div>\
+\
+                <!-- PDF Extracted Image 3 -->\
+                <div class="portfolio-item relative group h-[400px] reveal delay-200 overflow-hidden cursor-pointer">\
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1000&auto=format&fit=crop" alt="Social Media" class="portfolio-img w-full h-full object-cover">\
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white">\
+                        <p class="font-serif text-2xl italic mb-2">Social Media</p>\
+                        <span class="text-xs uppercase tracking-widest border-b border-brand-pink pb-1">Campaigns</span>\
+                    </div>\
+                </div>\
+\
+                <!-- PDF Extracted Image 4 -->\
+                <div class="portfolio-item relative group h-[400px] reveal overflow-hidden cursor-pointer">\
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1000&auto=format&fit=crop" alt="Branding / Logos" class="portfolio-img w-full h-full object-cover">\
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white">\
+                        <p class="font-serif text-2xl italic mb-2">Branding & Logos</p>\
+                        <span class="text-xs uppercase tracking-widest border-b border-brand-pink pb-1">Identity</span>\
+                    </div>\
+                </div>\
+\
+                <!-- PDF Extracted Image 5 -->\
+                <div class="portfolio-item relative group h-[400px] reveal delay-100 overflow-hidden cursor-pointer">\
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=1000&auto=format&fit=crop" alt="Book Covers" class="portfolio-img w-full h-full object-cover">\
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white">\
+                        <p class="font-serif text-2xl italic mb-2">Book Covers</p>\
+                        <span class="text-xs uppercase tracking-widest border-b border-brand-pink pb-1">Editorial</span>\
+                    </div>\
+                </div>\
+\
+                <!-- PDF Extracted Image 6 -->\
+                <div class="portfolio-item relative group h-[400px] reveal delay-200 overflow-hidden cursor-pointer">\
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1600&auto=format&fit=crop" alt="Corporate Press Ads" class="portfolio-img w-full h-full object-cover object-top">\
+                    <div class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-white">\
+                        <p class="font-serif text-2xl italic mb-2">Corporate Press Ads</p>\
+                        <span class="text-xs uppercase tracking-widest border-b border-brand-pink pb-1">Print Design</span>\
+                    </div>\
+                </div>\
+\
+            </div>\
+            \
+            <div class="text-center mt-16 reveal delay-200">\
+                <a href="#contact" class="inline-block text-brand-dark border-b border-brand-pink pb-1 uppercase tracking-widest text-sm hover:text-brand-pink transition-colors">\
+                    Request Full Portfolio PDF\
+                </a>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Mid-Page Parallax Break -->\
+    <section class="parallax-section py-32 text-center text-white relative">\
+        <div class="relative z-10 max-w-3xl mx-auto px-6 reveal">\
+            <h2 class="font-serif text-4xl md:text-5xl mb-6 italic">Designing with Purpose.</h2>\
+            <p class="font-light text-white/80 leading-relaxed max-w-2xl mx-auto">\
+                Clean, minimalistic artwork tailored to communicate your message effectively while bringing a distinct sense of elegance to every project.\
+            </p>\
+        </div>\
+    </section>\
+\
+    <!-- Services / Packages -->\
+    <section id="services" class="py-24 px-6 lg:px-16 max-w-7xl mx-auto">\
+        <div class="text-center mb-20 reveal">\
+            <p class="text-brand-pink uppercase tracking-[0.2em] text-sm mb-4">Investment</p>\
+            <h2 class="font-serif text-4xl md:text-5xl mb-6">Service <span class="italic">Packages</span></h2>\
+            <div class="w-16 h-[1px] bg-brand-pink mx-auto"></div>\
+        </div>\
+\
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">\
+            \
+            <!-- Package 1 -->\
+            <div class="bg-white border border-gray-100 p-10 text-center hover:border-brand-pink hover:shadow-xl transition-all duration-500 reveal group flex flex-col h-full">\
+                <div class="w-12 h-12 rounded-full bg-brand-pink/10 text-brand-pink flex items-center justify-center mx-auto mb-6">\
+                    <i class="fas fa-pen-nib text-xl"></i>\
+                </div>\
+                <h3 class="font-serif text-2xl mb-2 group-hover:text-brand-pink transition-colors">Logo Design</h3>\
+                <p class="text-sm text-gray-500 mb-8 uppercase tracking-widest">Brand Identity</p>\
+                \
+                <ul class="text-gray-600 font-light text-sm space-y-4 mb-10 flex-grow">\
+                    <li>Custom Minimalist Design</li>\
+                    <li>Primary & Alternate Logos</li>\
+                    <li>Brand Color Palette</li>\
+                    <li>Typography Selection</li>\
+                    <li>3 Revisions</li>\
+                </ul>\
+                \
+                <button onclick="document.getElementById('contact').scrollIntoView(\{behavior: 'smooth'\})" class="w-full py-4 border border-brand-pink text-brand-pink uppercase text-sm tracking-widest hover:bg-brand-pink hover:text-white transition-colors duration-300">\
+                    Inquire Now\
+                </button>\
+            </div>\
+\
+            <!-- Package 2 (Highlighted) -->\
+            <div class="bg-brand-dark text-white p-10 text-center shadow-2xl relative transform md:-translate-y-4 reveal delay-100 flex flex-col h-full">\
+                <div class="absolute top-0 right-0 bg-brand-pink text-white text-xs uppercase tracking-widest py-1 px-3 m-4">Popular</div>\
+                \
+                <div class="w-12 h-12 rounded-full bg-white/10 text-brand-pink flex items-center justify-center mx-auto mb-6">\
+                    <i class="fas fa-hashtag text-xl"></i>\
+                </div>\
+                <h3 class="font-serif text-2xl mb-2">Social Media</h3>\
+                <p class="text-sm text-gray-400 mb-8 uppercase tracking-widest">Digital Bundles</p>\
+                \
+                <ul class="text-gray-300 font-light text-sm space-y-4 mb-10 flex-grow">\
+                    <li>10 Custom Feed Templates</li>\
+                    <li>5 Instagram Story Designs</li>\
+                    <li>Highlight Covers</li>\
+                    <li>Profile Bio Optimization</li>\
+                    <li>Content Strategy Guide</li>\
+                </ul>\
+                \
+                <button onclick="document.getElementById('contact').scrollIntoView(\{behavior: 'smooth'\})" class="w-full py-4 bg-brand-pink text-white uppercase text-sm tracking-widest hover:bg-brand-pink-dark transition-colors duration-300 mt-auto">\
+                    Inquire Now\
+                </button>\
+            </div>\
+\
+            <!-- Package 3 -->\
+            <div class="bg-white border border-gray-100 p-10 text-center hover:border-brand-pink hover:shadow-xl transition-all duration-500 reveal delay-200 group flex flex-col h-full">\
+                <div class="w-12 h-12 rounded-full bg-brand-pink/10 text-brand-pink flex items-center justify-center mx-auto mb-6">\
+                    <i class="fas fa-briefcase text-xl"></i>\
+                </div>\
+                <h3 class="font-serif text-2xl mb-2 group-hover:text-brand-pink transition-colors">Corporate Event</h3>\
+                <p class="text-sm text-gray-500 mb-8 uppercase tracking-widest">Collateral Design</p>\
+                \
+                <ul class="text-gray-600 font-light text-sm space-y-4 mb-10 flex-grow">\
+                    <li>Event Flyers & Posters</li>\
+                    <li>Roll-up Banners</li>\
+                    <li>ID Badges & Lanyards</li>\
+                    <li>Digital Screen Graphics</li>\
+                    <li>Print-Ready Files</li>\
+                </ul>\
+                \
+                <button onclick="document.getElementById('contact').scrollIntoView(\{behavior: 'smooth'\})" class="w-full py-4 border border-brand-pink text-brand-pink uppercase text-sm tracking-widest hover:bg-brand-pink hover:text-white transition-colors duration-300 mt-auto">\
+                    Inquire Now\
+                </button>\
+            </div>\
+\
+        </div>\
+    </section>\
+\
+    <!-- Gemini AI Concept Studio -->\
+    <section id="ai-studio" class="py-24 bg-brand-pink/5 border-t border-b border-brand-pink/20">\
+        <div class="max-w-4xl mx-auto px-6 lg:px-16 text-center reveal">\
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white text-brand-pink shadow-sm mb-6">\
+                <i class="fas fa-wand-magic-sparkles text-2xl"></i>\
+            </div>\
+            <h2 class="font-serif text-3xl md:text-4xl mb-4 text-brand-dark">The \uc0\u10024  AI Concept Studio</h2>\
+            <p class="text-gray-600 font-light leading-relaxed mb-10 max-w-2xl mx-auto">\
+                Not entirely sure what design direction to take? Tell my AI Assistant a little bit about your brand, business, or event. It will brainstorm a high-end design vision, suggest a color palette, and recommend the perfect Cali Dani service package to bring it to life!\
+            </p>\
+\
+            <div class="bg-white p-6 md:p-8 shadow-sm border border-brand-pink/10 rounded-xl text-left">\
+                <label for="visionInput" class="block text-sm font-medium text-brand-dark mb-2">Describe your project idea:</label>\
+                <textarea id="visionInput" rows="3" class="w-full bg-gray-50 border border-gray-200 rounded-lg p-4 text-sm font-light text-gray-700 focus:outline-none focus:border-brand-pink focus:ring-1 focus:ring-brand-pink transition-all resize-none mb-4" placeholder="e.g., I'm starting an organic, luxury skincare line for men. We use natural ingredients like charcoal and aloe..."></textarea>\
+                \
+                <button id="visionBtn" onclick="generateDesignVision()" class="bg-brand-dark text-white px-8 py-3 text-sm uppercase tracking-widest hover:bg-brand-pink transition-all duration-300 flex items-center justify-center w-full md:w-auto rounded shadow-sm">\
+                    <span>\uc0\u10024  Spark a Vision</span>\
+                    <i class="fas fa-circle-notch fa-spin hidden ml-3" id="visionSpinner"></i>\
+                </button>\
+\
+                <!-- Error Message -->\
+                <div id="visionError" class="hidden mt-4 text-red-500 text-sm font-medium">\
+                    Oops! My creative circuits are busy right now. Please try again in a moment.\
+                </div>\
+\
+                <!-- AI Output Display -->\
+                <div id="visionOutput" class="hidden mt-8 pt-8 border-t border-gray-100">\
+                    <p class="text-xs uppercase tracking-widest text-brand-pink mb-4 font-semibold">Your Custom Design Brief</p>\
+                    <div id="visionOutputText" class="ai-formatted text-sm text-gray-600 leading-relaxed font-light space-y-3">\
+                        <!-- Content gets injected here -->\
+                    </div>\
+                    \
+                    <button id="copyToFormBtn" onclick="prefillInquiryForm()" class="mt-8 border border-brand-pink text-brand-pink px-6 py-2 text-xs uppercase tracking-widest hover:bg-brand-pink hover:text-white transition-all rounded">\
+                        \uc0\u10024  Attach to Inquiry Form\
+                    </button>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Footer / Contact Section -->\
+    <footer id="contact" class="bg-brand-light pt-24 pb-12">\
+        <div class="max-w-7xl mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16">\
+            \
+            <!-- Contact Info -->\
+            <div class="reveal">\
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">Let's <span class="italic text-brand-pink">talk.</span></h2>\
+                <p class="text-gray-600 font-light leading-relaxed mb-10 max-w-md">\
+                    Please feel free to contact me! I would love to hear from you. Whether you have a project in mind or just want to say hello.\
+                </p>\
+                \
+                <div class="space-y-6">\
+                    <div class="flex items-start">\
+                        <i class="fas fa-envelope text-brand-pink mt-1 mr-4"></i>\
+                        <div>\
+                            <p class="font-medium text-brand-dark">Email Me</p>\
+                            <a href="mailto:bramwellshaneille@gmail.com" class="text-gray-500 font-light hover:text-brand-pink block transition-colors">bramwellshaneille@gmail.com</a>\
+                            <a href="mailto:calidanidesigns@gmail.com" class="text-gray-500 font-light hover:text-brand-pink block transition-colors mt-1">calidanidesigns@gmail.com</a>\
+                        </div>\
+                    </div>\
+\
+                    <div class="flex items-start">\
+                        <i class="fas fa-phone-alt text-brand-pink mt-1 mr-4"></i>\
+                        <div>\
+                            <p class="font-medium text-brand-dark">Phone</p>\
+                            <a href="tel:+18765010000" class="text-gray-500 font-light hover:text-brand-pink block transition-colors">876.501.XXXX</a>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="flex items-start">\
+                        <i class="fas fa-map-marker-alt text-brand-pink mt-1 mr-4"></i>\
+                        <div>\
+                            <p class="font-medium text-brand-dark">Location</p>\
+                            <p class="text-gray-500 font-light">Available for remote work worldwide.</p>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <div class="mt-12 flex space-x-6">\
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:text-brand-pink hover:border-brand-pink transition-all">\
+                        <i class="fab fa-instagram"></i>\
+                    </a>\
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:text-brand-pink hover:border-brand-pink transition-all">\
+                        <i class="fab fa-linkedin-in"></i>\
+                    </a>\
+                    <a href="#" class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:text-brand-pink hover:border-brand-pink transition-all">\
+                        <i class="fab fa-behance"></i>\
+                    </a>\
+                </div>\
+            </div>\
+\
+            <!-- Inquiry Form -->\
+            <div class="reveal delay-100 bg-white p-8 md:p-12 shadow-sm border border-gray-100 rounded-xl">\
+                <h3 class="font-serif text-2xl mb-8">Send an Inquiry</h3>\
+                <form id="contactForm" class="space-y-6">\
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">\
+                        <div class="flex flex-col">\
+                            <input type="text" id="name" placeholder="Your Name" required class="form-input text-sm w-full font-light">\
+                        </div>\
+                        <div class="flex flex-col">\
+                            <input type="email" id="email" placeholder="Email Address" required class="form-input text-sm w-full font-light">\
+                        </div>\
+                    </div>\
+                    <div class="flex flex-col">\
+                        <select id="packageSelect" class="form-input text-sm w-full font-light text-gray-500 appearance-none bg-transparent">\
+                            <option value="" disabled selected>Interested in...</option>\
+                            <option value="logo">Logo Design</option>\
+                            <option value="social">Social Media</option>\
+                            <option value="corporate">Corporate Collateral</option>\
+                            <option value="other">Other Project</option>\
+                        </select>\
+                    </div>\
+                    <div class="flex flex-col">\
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..." required class="form-input text-sm w-full font-light resize-none"></textarea>\
+                    </div>\
+                    <button type="submit" class="w-full bg-brand-dark text-white py-4 uppercase tracking-widest text-sm hover:bg-brand-pink transition-colors duration-300 rounded">\
+                        Submit Message\
+                    </button>\
+                </form>\
+                <!-- Form Success Message (Hidden by default) -->\
+                <div id="formSuccess" class="hidden mt-4 text-brand-pink text-sm font-medium text-center p-3 bg-brand-pink/10 rounded">\
+                    Thank you! Your message has been sent successfully.\
+                </div>\
+            </div>\
+        </div>\
+\
+        <div class="text-center mt-20 text-xs text-gray-400 uppercase tracking-widest">\
+            &copy; <span id="year"></span> Cali Dani Designs. All rights reserved.\
+        </div>\
+    </footer>\
+\
+    <!-- JavaScript for Interactions, Animations & Gemini API -->\
+    <script>\
+        // --- Gemini API Logic ---\
+        const apiKey = ""; // API key is injected by the environment\
+\
+        async function fetchGeminiWithRetry(prompt, systemInstruction) \{\
+            const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=$\{apiKey\}`;\
+            const retries = 5;\
+            const delays = [1000, 2000, 4000, 8000, 16000];\
+            \
+            const payload = \{\
+                contents: [\{ parts: [\{ text: prompt \}] \}],\
+                systemInstruction: \{ parts: [\{ text: systemInstruction \}] \}\
+            \};\
+\
+            for (let i = 0; i < retries; i++) \{\
+                try \{\
+                    const response = await fetch(endpoint, \{\
+                        method: 'POST',\
+                        headers: \{ 'Content-Type': 'application/json' \},\
+                        body: JSON.stringify(payload)\
+                    \});\
+                    \
+                    if (!response.ok) throw new Error(`HTTP $\{response.status\}`);\
+                    \
+                    const data = await response.json();\
+                    return data.candidates?.[0]?.content?.parts?.[0]?.text || "Unable to generate vision at this time.";\
+                \} catch (error) \{\
+                    if (i === retries - 1) throw error;\
+                    await new Promise(res => setTimeout(res, delays[i]));\
+                \}\
+            \}\
+        \}\
+\
+        async function generateDesignVision() \{\
+            const input = document.getElementById('visionInput').value;\
+            const btn = document.getElementById('visionBtn');\
+            const spinner = document.getElementById('visionSpinner');\
+            const outputArea = document.getElementById('visionOutput');\
+            const outputText = document.getElementById('visionOutputText');\
+            const errorMsg = document.getElementById('visionError');\
+\
+            if (!input.trim()) return;\
+\
+            // UI Loading State\
+            btn.disabled = true;\
+            btn.classList.add('opacity-70');\
+            spinner.classList.remove('hidden');\
+            outputArea.classList.add('hidden');\
+            errorMsg.classList.add('hidden');\
+\
+            const systemPrompt = `You are the creative director AI for 'Cali Dani Designs', a minimalist, sophisticated, high-end graphic design studio created by Shaneille Bramwell. \
+            The user will pitch you a rough idea for a business, brand, or event. \
+            Your goal is to return a concise, inspiring 'Design Vision Brief'. \
+            Format the response in clean HTML using <p>, <strong> for labels, <br>, and <ul> for lists. NO markdown formatting or code blocks.\
+            \
+            Your response MUST include:\
+            1) <strong>Vibe & Aesthetic:</strong> A 2-sentence description of the artistic direction.\
+            2) <strong>Color Palette:</strong> 3-4 specific colors described elegantly (e.g., 'Soft rose, muted charcoal, and crisp linen white').\
+            3) <strong>Typography:</strong> Suggest a font pairing (e.g., 'An elegant serif paired with a clean geometric sans-serif').\
+            4) <strong>Recommended Package:</strong> Explicitly recommend either 'Logo Design', 'Social Media', or 'Corporate Event Collateral' from the service packages.`;\
+\
+            try \{\
+                const generatedHtml = await fetchGeminiWithRetry(input, systemPrompt);\
+                outputText.innerHTML = generatedHtml;\
+                outputArea.classList.remove('hidden');\
+            \} catch (error) \{\
+                console.error("Gemini API Error:", error);\
+                errorMsg.classList.remove('hidden');\
+            \} finally \{\
+                btn.disabled = false;\
+                btn.classList.remove('opacity-70');\
+                spinner.classList.add('hidden');\
+            \}\
+        \}\
+\
+        function prefillInquiryForm() \{\
+            const userIdea = document.getElementById('visionInput').value;\
+            const generatedHtml = document.getElementById('visionOutputText').innerHTML;\
+            \
+            // Convert HTML to plain text roughly\
+            const tempDiv = document.createElement("div");\
+            tempDiv.innerHTML = generatedHtml;\
+            const plainTextVision = tempDiv.textContent || tempDiv.innerText || "";\
+\
+            const formMessage = document.getElementById('message');\
+            formMessage.value = `Hi Shaneille,\\n\\nI used your AI Concept Studio for my idea:\\n"$\{userIdea\}"\\n\\nHere is the vision it generated that I would love to explore with you:\\n\\n$\{plainTextVision.trim()\}\\n\\nLet me know the next steps!`;\
+            \
+            // Try to auto-select the dropdown based on keywords\
+            const packageSelect = document.getElementById('packageSelect');\
+            const lowerText = plainTextVision.toLowerCase();\
+            if (lowerText.includes('logo design') || lowerText.includes('brand')) \{\
+                packageSelect.value = 'logo';\
+            \} else if (lowerText.includes('social media')) \{\
+                packageSelect.value = 'social';\
+            \} else if (lowerText.includes('corporate') || lowerText.includes('event')) \{\
+                packageSelect.value = 'corporate';\
+            \}\
+\
+            // Scroll to form and highlight\
+            const contactSection = document.getElementById('contact');\
+            contactSection.scrollIntoView(\{ behavior: 'smooth' \});\
+            \
+            setTimeout(() => \{\
+                formMessage.focus();\
+                formMessage.classList.add('ring-2', 'ring-brand-pink', 'border-brand-pink');\
+                setTimeout(() => formMessage.classList.remove('ring-2', 'ring-brand-pink', 'border-brand-pink'), 1500);\
+            \}, 800);\
+        \}\
+\
+        // --- Standard UI Logic ---\
+        document.addEventListener('DOMContentLoaded', () => \{\
+            // Set current year in footer\
+            document.getElementById('year').textContent = new Date().getFullYear();\
+\
+            // Navbar Scroll Effect\
+            const navbar = document.getElementById('navbar');\
+            window.addEventListener('scroll', () => \{\
+                if (window.scrollY > 50) \{\
+                    navbar.classList.add('bg-white', 'shadow-sm', 'py-4');\
+                    navbar.classList.remove('bg-transparent', 'py-6');\
+                \} else \{\
+                    navbar.classList.add('bg-transparent', 'py-6');\
+                    navbar.classList.remove('bg-white', 'shadow-sm', 'py-4');\
+                \}\
+            \});\
+\
+            // Mobile Menu Toggle\
+            const mobileBtn = document.getElementById('mobile-menu-btn');\
+            const mobileMenu = document.getElementById('mobile-menu');\
+            const mobileLinks = document.querySelectorAll('.mobile-link');\
+            const icon = mobileBtn.querySelector('i');\
+            let isMenuOpen = false;\
+\
+            function toggleMenu() \{\
+                isMenuOpen = !isMenuOpen;\
+                if (isMenuOpen) \{\
+                    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');\
+                    mobileMenu.classList.add('opacity-100', 'pointer-events-auto');\
+                    icon.classList.remove('fa-bars');\
+                    icon.classList.add('fa-times');\
+                    document.body.style.overflow = 'hidden';\
+                \} else \{\
+                    mobileMenu.classList.add('opacity-0', 'pointer-events-none');\
+                    mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');\
+                    icon.classList.remove('fa-times');\
+                    icon.classList.add('fa-bars');\
+                    document.body.style.overflow = '';\
+                \}\
+            \}\
+\
+            mobileBtn.addEventListener('click', toggleMenu);\
+            mobileLinks.forEach(link => \{\
+                link.addEventListener('click', toggleMenu);\
+            \});\
+\
+            // Scroll Reveal Animation (Intersection Observer)\
+            const revealElements = document.querySelectorAll('.reveal');\
+            \
+            const revealObserver = new IntersectionObserver((entries, observer) => \{\
+                entries.forEach(entry => \{\
+                    if (entry.isIntersecting) \{\
+                        entry.target.classList.add('active');\
+                        // Optional: Stop observing once revealed\
+                        observer.unobserve(entry.target);\
+                    \}\
+                \});\
+            \}, \{\
+                root: null,\
+                threshold: 0.1,\
+                rootMargin: "0px 0px -50px 0px"\
+            \});\
+\
+            revealElements.forEach(el => revealObserver.observe(el));\
+\
+            // Form Submission Mock\
+            const form = document.getElementById('contactForm');\
+            const successMsg = document.getElementById('formSuccess');\
+\
+            form.addEventListener('submit', (e) => \{\
+                e.preventDefault();\
+                // Simulate network request\
+                const btn = form.querySelector('button[type="submit"]');\
+                const originalText = btn.textContent;\
+                btn.textContent = 'Sending...';\
+                \
+                setTimeout(() => \{\
+                    btn.textContent = originalText;\
+                    form.reset();\
+                    successMsg.classList.remove('hidden');\
+                    setTimeout(() => \{\
+                        successMsg.classList.add('hidden');\
+                    \}, 5000);\
+                \}, 1500);\
+            \});\
+        \});\
+    </script>\
+</body>\
+</html>}
