@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Cali Dani Designs | Shaneille Bramwell</title>
+    <title>Cali Dani Designs | Shaneille Powell — Graphic Designer</title>
+    <meta name="description" content="Graphic design portfolio and resume for Shaneille Powell of Cali Dani Designs. Invitations, social media, emailers, press ads, book covers, banners, logos and more.">
     <style>
         html { scroll-behavior: smooth; }
-        body { background-color: #ffffff; color: #1a1a1a; }
+        body { background-color: #ffffff; color: #1a1a1a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
         .hero { background: linear-gradient(135deg, #E0938E 0%, #d4807d 100%); }
         .accent-line { width: 4rem; height: 1px; background-color: #E0938E; }
         .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .category-tile { background: linear-gradient(135deg, #fdf2f1 0%, #f8e1de 100%); aspect-ratio: 1 / 1; }
+        .category-tile.dark { background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%); color: #fff; }
     </style>
 </head>
 <body>
@@ -21,114 +24,224 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-16 py-4 flex justify-between items-center">
             <a href="#home" class="text-2xl font-bold tracking-widest">CALI DANI</a>
             <ul class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
+                <li><a href="#home" class="hover:text-pink-600 transition">Home</a></li>
                 <li><a href="#about" class="hover:text-pink-600 transition">About</a></li>
-                <li><a href="#work" class="hover:text-pink-600 transition">Work</a></li>
-                <li><a href="#services" class="hover:text-pink-600 transition">Services</a></li>
+                <li><a href="#experience" class="hover:text-pink-600 transition">Experience</a></li>
+                <li><a href="#work" class="hover:text-pink-600 transition">My Creative World</a></li>
                 <li><a href="#contact" class="hover:text-pink-600 transition">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero min-h-screen flex items-center justify-center text-center text-white pt-20">
-        <div>
-            <p class="text-sm tracking-widest uppercase mb-4">Welcome to My Studio</p>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">Welcome to My World of Designs</h1>
-            <p class="text-xl mb-8 text-white/90">Transforming Ideas Into Beautiful Visual Experiences</p>
-            <a href="#work" class="inline-block bg-white text-pink-600 px-8 py-3 rounded-lg font-semibold hover:bg-pink-100 transition">Explore My Work</a>
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-center text-white pt-20 px-6">
+        <div class="max-w-3xl">
+            <p class="text-sm tracking-[0.4em] uppercase mb-6">Cali Dani Designs</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Welcome to My World of Creativity</h1>
+            <p class="text-xl mb-2 text-white/90">Graphic Design Portfolio &amp; Resume</p>
+            <p class="text-lg mb-10 text-white/80">Shaneille Powell</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#work" class="inline-block bg-white text-pink-700 px-8 py-3 rounded-lg font-semibold hover:bg-pink-100 transition">Explore My Work</a>
+                <a href="#contact" class="inline-block border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-pink-700 transition">Let's Talk</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-24 md:py-32 px-6 lg:px-16 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
-                <div class="accent-line mb-6"></div>
-                <p class="text-gray-600 leading-relaxed mb-6">
-                    Hi, I'm Shaneille Powell, a passionate graphic designer dedicated to creating visually stunning and meaningful designs. With expertise in branding, digital design, and creative direction, I help businesses tell their stories through compelling visuals.
+                <p class="text-pink-600 uppercase tracking-widest text-sm mb-2">About</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">So, who am I?</h2>
+                <div class="accent-line mb-8"></div>
+                <p class="text-gray-700 leading-relaxed mb-5">
+                    Hey there! <span aria-hidden="true">*waves*</span> I'm Shaneille! How will I fit into this little passage all the amazing things about me that you deserve to know? Either way... I'll give it a shot.
                 </p>
-                <p class="text-gray-600 leading-relaxed">
-                    My approach combines strategic thinking with artistic creativity to deliver designs that not only look beautiful but also drive results.
+                <p class="text-gray-700 leading-relaxed mb-5">
+                    I have always been passionate about creativity and adding my own little spice to everything I do to make it beautiful. It's easy to pour love into my art because I love designing and producing appealing designs.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-5">
+                    My goal as an artist is to solve as many design problems as possible with minimalistic and clean artwork.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-5">
+                    I am great at what I do, owing to my years of experience and my commitment to every project I take on. This ensures that my clients are happy and excited with every design they receive. I also believe in personal and professional development and staying relevant, so I'm always learning more efficient ways to improve each design as I progress on my creative journey.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Most of all, whatever I do, I try to have fun with it.
                 </p>
             </div>
-            <div>
-                <img src="https://via.placeholder.com/400x500" alt="About" class="w-full rounded-lg shadow-lg">
+            <div class="bg-pink-50 border border-pink-100 rounded-2xl p-8 md:p-10 md:sticky md:top-28">
+                <h3 class="text-2xl font-bold mb-6">At a glance</h3>
+                <dl class="space-y-5 text-gray-700">
+                    <div>
+                        <dt class="text-xs uppercase tracking-widest text-pink-700 mb-1">Designer</dt>
+                        <dd class="font-semibold">Shaneille Powell</dd>
+                    </div>
+                    <div>
+                        <dt class="text-xs uppercase tracking-widest text-pink-700 mb-1">Studio</dt>
+                        <dd class="font-semibold">Cali Dani Designs</dd>
+                    </div>
+                    <div>
+                        <dt class="text-xs uppercase tracking-widest text-pink-700 mb-1">Style</dt>
+                        <dd>Minimalistic, clean, and intentional</dd>
+                    </div>
+                    <div>
+                        <dt class="text-xs uppercase tracking-widest text-pink-700 mb-1">Mission</dt>
+                        <dd>Solve design problems with artwork that's both beautiful and effective.</dd>
+                    </div>
+                </dl>
+                <a href="assets/cali-dani-portfolio.pdf" class="mt-8 inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-lg transition" download>Download Full Portfolio (PDF)</a>
             </div>
         </div>
     </section>
 
-    <!-- Work/Portfolio Section -->
-    <section id="work" class="py-24 bg-gray-50">
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 bg-gray-50">
         <div class="px-6 lg:px-16 max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <p class="text-pink-600 uppercase tracking-widest text-sm mb-2">Portfolio</p>
-                <h2 class="text-4xl md:text-5xl font-bold mb-4">My Work</h2>
+                <p class="text-pink-600 uppercase tracking-widest text-sm mb-2">Experience</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">What I Do</h2>
                 <div class="accent-line mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Years of experience and a commitment to every project, with a focus on appealing, results-driven design.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card bg-white p-6 rounded-lg shadow-md">
-                    <img src="images/book-launch-invite.jpg" alt="Project 1" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2">Project Title 1</h3>
-                    <p class="text-gray-600">A description of this design project and the creative process behind it.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 p-8 rounded-lg card">
+                    <div class="text-pink-600 text-3xl font-bold mb-3">01</div>
+                    <h3 class="text-2xl font-bold mb-3">Brand &amp; Identity</h3>
+                    <p class="text-gray-600">Logos, brand systems, and visual identities crafted with minimalist, clean artwork that scales across every touchpoint.</p>
                 </div>
-                <div class="card bg-white p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/300x300" alt="Project 2" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2">Project Title 2</h3>
-                    <p class="text-gray-600">A description of this design project and the creative process behind it.</p>
+
+                <div class="bg-gray-900 text-white p-8 rounded-lg card">
+                    <div class="text-pink-300 text-3xl font-bold mb-3">02</div>
+                    <h3 class="text-2xl font-bold mb-3">Digital &amp; Social</h3>
+                    <p class="text-gray-300">Social media graphics, emailers, and website banners that drive engagement and keep your brand consistent online.</p>
                 </div>
-                <div class="card bg-white p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/300x300" alt="Project 3" class="w-full h-64 object-cover rounded-lg mb-4">
-                    <h3 class="text-xl font-bold mb-2">Project Title 3</h3>
-                    <p class="text-gray-600">A description of this design project and the creative process behind it.</p>
+
+                <div class="bg-white border border-gray-200 p-8 rounded-lg card">
+                    <div class="text-pink-600 text-3xl font-bold mb-3">03</div>
+                    <h3 class="text-2xl font-bold mb-3">Print &amp; Editorial</h3>
+                    <p class="text-gray-600">Invitations, press ads, book covers, magazines, business cards, certificates, billboards, and other print collateral.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 px-6 lg:px-16 max-w-7xl mx-auto">
+    <!-- Work / My Creative World Section -->
+    <section id="work" class="py-24 px-6 lg:px-16 max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <p class="text-pink-600 uppercase tracking-widest text-sm mb-2">Services</p>
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">What I Offer</h2>
+            <p class="text-pink-600 uppercase tracking-widest text-sm mb-2">Portfolio</p>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">My Creative World</h2>
             <div class="accent-line mx-auto"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white border border-gray-200 p-8 rounded-lg text-center card">
-                <div class="text-4xl mb-4">🎨</div>
-                <h3 class="text-2xl font-bold mb-3">Branding</h3>
-                <p class="text-gray-600 mb-4">Complete brand identity design including logos, color palettes, and brand guidelines.</p>
-                <a href="#contact" class="text-pink-600 font-semibold hover:underline">Learn More →</a>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="card bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/book-launch-invite.jpg" alt="Book launch invitation design" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Invitations</h3>
+                    <p class="text-gray-600">Elegant invitations for launches, events, and milestone moments — including book launches and corporate functions.</p>
+                </div>
             </div>
 
-            <div class="bg-gray-900 text-white p-8 rounded-lg text-center card">
-                <div class="text-4xl mb-4">💻</div>
-                <h3 class="text-2xl font-bold mb-3">Digital Design</h3>
-                <p class="text-gray-300 mb-4">Web design, UI/UX, social media graphics, and digital marketing materials.</p>
-                <a href="#contact" class="text-pink-400 font-semibold hover:underline">Learn More →</a>
+            <div class="card rounded-lg shadow-md overflow-hidden">
+                <div class="category-tile flex items-center justify-center text-pink-700 text-3xl font-bold tracking-widest">SOCIAL</div>
+                <div class="p-6 bg-white">
+                    <h3 class="text-xl font-bold mb-2">Social Media</h3>
+                    <p class="text-gray-600">Eye-catching social graphics designed to stop the scroll and stay on-brand across every platform.</p>
+                </div>
             </div>
 
-            <div class="bg-white border border-gray-200 p-8 rounded-lg text-center card">
-                <div class="text-4xl mb-4">📱</div>
-                <h3 class="text-2xl font-bold mb-3">Print Design</h3>
-                <p class="text-gray-600 mb-4">Business cards, brochures, packaging, and other print materials.</p>
-                <a href="#contact" class="text-pink-600 font-semibold hover:underline">Learn More →</a>
+            <div class="card rounded-lg shadow-md overflow-hidden">
+                <div class="category-tile dark flex items-center justify-center text-3xl font-bold tracking-widest">EMAIL</div>
+                <div class="p-6 bg-white">
+                    <h3 class="text-xl font-bold mb-2">Emailers</h3>
+                    <p class="text-gray-600">Branded email designs that turn campaigns into conversions and keep your audience engaged.</p>
+                </div>
             </div>
+
+            <div class="card rounded-lg shadow-md overflow-hidden">
+                <div class="category-tile flex items-center justify-center text-pink-700 text-3xl font-bold tracking-widest">PRESS</div>
+                <div class="p-6 bg-white">
+                    <h3 class="text-xl font-bold mb-2">Press Ads</h3>
+                    <p class="text-gray-600">Impactful newspaper and magazine advertising layouts that command attention on the page.</p>
+                </div>
+            </div>
+
+            <div class="card rounded-lg shadow-md overflow-hidden">
+                <div class="category-tile dark flex items-center justify-center text-3xl font-bold tracking-widest">BOOKS</div>
+                <div class="p-6 bg-white">
+                    <h3 class="text-xl font-bold mb-2">Book Cover Designs</h3>
+                    <p class="text-gray-600">Cover artwork for authors and publishers — typography and imagery that capture the story inside.</p>
+                </div>
+            </div>
+
+            <div class="card rounded-lg shadow-md overflow-hidden">
+                <div class="category-tile flex items-center justify-center text-pink-700 text-3xl font-bold tracking-widest">BANNERS</div>
+                <div class="p-6 bg-white">
+                    <h3 class="text-xl font-bold mb-2">Banner Designs</h3>
+                    <p class="text-gray-600">Web and event banners with bold composition and clear messaging for every channel and surface.</p>
+                </div>
+            </div>
+
+            <div class="card rounded-lg shadow-md overflow-hidden">
+                <div class="category-tile dark flex items-center justify-center text-3xl font-bold tracking-widest">LOGOS</div>
+                <div class="p-6 bg-white">
+                    <h3 class="text-xl font-bold mb-2">Logos</h3>
+                    <p class="text-gray-600">Distinctive logo marks built from the ground up — minimal, memorable, and made to last.</p>
+                </div>
+            </div>
+
+            <div class="card rounded-lg shadow-md overflow-hidden">
+                <div class="category-tile flex items-center justify-center text-pink-700 text-3xl font-bold tracking-widest">MORE</div>
+                <div class="p-6 bg-white">
+                    <h3 class="text-xl font-bold mb-2">Other Designs</h3>
+                    <p class="text-gray-600">Album cover art, seminar flyers, certificates, business cards, sticker tags, billboards, magazines and resumes.</p>
+                </div>
+            </div>
+
+            <div class="card rounded-lg shadow-md overflow-hidden bg-gray-900 text-white flex flex-col justify-center p-8">
+                <h3 class="text-2xl font-bold mb-3">Want the full portfolio?</h3>
+                <p class="text-gray-300 mb-6">Download the complete graphic design portfolio and resume PDF.</p>
+                <a href="assets/cali-dani-portfolio.pdf" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold px-5 py-2.5 rounded transition self-start" download>Download PDF</a>
+            </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-gray-900 text-white">
-        <div class="max-w-2xl mx-auto px-6 lg:px-16 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Let's Create Something Amazing</h2>
-            <p class="text-xl text-gray-300 mb-8">Have a project in mind? I'd love to hear from you!</p>
-            
-            <form class="space-y-6">
-                <input type="text" placeholder="Your Name" class="w-full bg-gray-800 border border-gray-700 p-3 rounded text-white" required>
-                <input type="email" placeholder="Your Email" class="w-full bg-gray-800 border border-gray-700 p-3 rounded text-white" required>
-                <textarea placeholder="Tell me about your project" rows="5" class="w-full bg-gray-800 border border-gray-700 p-3 rounded text-white" required></textarea>
+        <div class="max-w-3xl mx-auto px-6 lg:px-16 text-center">
+            <p class="text-pink-400 uppercase tracking-widest text-sm mb-2">Contact</p>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Let's talk.</h2>
+            <p class="text-xl text-gray-300 mb-2">Please feel free to contact me!</p>
+            <p class="text-lg text-gray-400 mb-12">I would love to hear from you.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-left">
+                <a href="mailto:calidanidesigns@gmail.com" class="bg-gray-800 hover:bg-gray-700 transition rounded-lg p-6 block">
+                    <p class="text-xs uppercase tracking-widest text-pink-400 mb-2">Studio Email</p>
+                    <p class="font-semibold break-all">calidanidesigns@gmail.com</p>
+                </a>
+                <a href="mailto:bramwellshaneille@gmail.com" class="bg-gray-800 hover:bg-gray-700 transition rounded-lg p-6 block">
+                    <p class="text-xs uppercase tracking-widest text-pink-400 mb-2">Personal Email</p>
+                    <p class="font-semibold break-all">bramwellshaneille@gmail.com</p>
+                </a>
+                <a href="tel:+18765013543" class="bg-gray-800 hover:bg-gray-700 transition rounded-lg p-6 block">
+                    <p class="text-xs uppercase tracking-widest text-pink-400 mb-2">Phone</p>
+                    <p class="font-semibold">876.501.3543</p>
+                </a>
+            </div>
+
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6 text-left">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full bg-gray-800 border border-gray-700 p-3 rounded text-white placeholder-gray-400" required>
+                    <input type="email" name="email" placeholder="Your Email" class="w-full bg-gray-800 border border-gray-700 p-3 rounded text-white placeholder-gray-400" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject" class="w-full bg-gray-800 border border-gray-700 p-3 rounded text-white placeholder-gray-400">
+                <textarea name="message" placeholder="Tell me about your project" rows="5" class="w-full bg-gray-800 border border-gray-700 p-3 rounded text-white placeholder-gray-400" required></textarea>
                 <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 rounded transition">Send Message</button>
             </form>
         </div>
@@ -136,11 +249,10 @@
 
     <!-- Footer -->
     <footer class="py-8 text-center bg-gray-950 text-gray-400">
-        <p>&copy; 2026 Cali Dani Designs | Shaneille Powell. All Rights Reserved.</p>
+        <p>&copy; 2026 Cali Dani Designs &middot; Shaneille Powell. All Rights Reserved.</p>
     </footer>
 
     <script>
-        // Mobile menu toggle
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
